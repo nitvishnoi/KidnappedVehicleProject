@@ -1,4 +1,12 @@
-# Overview
+**Prerequisite:**
+
+Before starting this project better to complete below 2 chepters in Udacity-Self-Driving Car Engineer" nano degree program.
+
+Term-2 Lesson 4. Particle Filters
+Term-2 Lesson 5. Implementation of a Particle Filter
+
+
+# Overview of the project
 This repository contains all the code needed to complete the final project for the Localization course in Udacity's Self-Driving Car Nanodegree.
 
 #### Submission
