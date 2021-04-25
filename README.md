@@ -129,9 +129,35 @@ You can find the inputs to the particle filter in the `data` directory.
 
 > * Map data provided by 3D Mapping Solutions GmbH.
 
+
+**Project Implementation**
+Each major step involved in implementation is illustrated below:
+
+[![Alt text for your video](data/Capture1.PNG)]
+
+The C++ program for localization was implemented using following major steps:
+
+1. A noisy measurement from GPS sensor was received and used to initialize the position of vehicle. This measurement included the x coordinate, y coordinate (both in m) and the theta (orientation) of vehicle in radian. Noise is modelled by Gaussian distribution with standard deviation in x, y and theta provided as a part of GPS uncertainty specification. Particle filter algorithm uses particles to represent the location of vehicle. Hence, in this case, 20 particles were created and initialized to locations taken from normal distribution with mean equal to the location received from GPS and standard deviation equal to the GPS measurement uncertainty. The number of particles was a tunable parameter and was chosen after multiple iterations described in later steps of implementation.
+
+2. Global map of environment is initialized. This map is represented by a list x and y coordinates of landmarks in the environment.
+
+3. Once map and particles are initialized, the vehicle implements Prediction step in which the location of each particle at next time step is predicted. This is done by using information of control inputs and time elapsed between time steps. The control inputs are nothing but magnitude of velocity (v) and yaw rate (θ). Location update is done with the help of formula given below:
+
+[![Alt text for your video](data/Capture2.PNG)]
+
+4. After prediction step, the vehicle implements Update step. In this step, particles are assigned with weights corresponding to their prediction. 
+
 **Project Output**
 
-Particle filter implemented was run on Udacity's simulator and its error and performance was noted. Below are the results with 10 and 20 particles respectively:
+Particle filter implemented was run on Udacity's simulator and its error and performance was noted.
+Below is th output video captured during running output binary and Udacity simulator with showing logs in Udacity project space at path "/home/workspace/KidnappedVehicleProject"
+
+
+
+
+
+[![Alt text for your video](data/Capture1.PNG)]
+
 
 
 [![Particle filter video](data/Capture.PNG)](https://www.youtube.com/watch?v=q9Fj_fgf2LA "Particle filter Clip for  - Click to Watch!")
