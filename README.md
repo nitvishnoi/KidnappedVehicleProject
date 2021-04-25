@@ -133,7 +133,7 @@ You can find the inputs to the particle filter in the `data` directory.
 **Project Implementation**
 Each major step involved in implementation is illustrated below:
 
-[![Alt text for your video](data/Capture1.PNG)]
+![](data/Capture1.PNG)]
 
 The C++ program for localization was implemented using following major steps:
 
@@ -143,7 +143,7 @@ The C++ program for localization was implemented using following major steps:
 
 3. Once map and particles are initialized, the vehicle implements Prediction step in which the location of each particle at next time step is predicted. This is done by using information of control inputs and time elapsed between time steps. The control inputs are nothing but magnitude of velocity (v) and yaw rate (θ). Location update is done with the help of formula given below:
 
-[![Alt text for your video](data/Capture2.PNG)]
+![](data/Capture2.PNG)]
 
 4. After prediction step, the vehicle implements Update step. In this step, particles are assigned with weights corresponding to their prediction. 
 
