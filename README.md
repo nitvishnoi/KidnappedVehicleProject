@@ -129,6 +129,15 @@ You can find the inputs to the particle filter in the `data` directory.
 
 > * Map data provided by 3D Mapping Solutions GmbH.
 
+**Project Output**
+
+Particle filter implemented was run on Udacity's simulator and its error and performance was noted. Below are the results with 10 and 20 particles respectively:
+
+
+[![Particle filter video](doc/SC2_youtube.PNG)](https://www.youtube.com/watch?v=q9Fj_fgf2LA "Particle filter Clip for  - Click to Watch!")
+
+
+
 ## Success Criteria
 If your particle filter passes the current grading code in the simulator (you can make sure you have the current version at any time by doing a `git pull`), then you should pass!
 
