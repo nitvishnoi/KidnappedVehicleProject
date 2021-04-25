@@ -2,8 +2,9 @@
 
 Before starting this project better to complete below 2 chepters in Udacity-Self-Driving Car Engineer" nano degree program.
 
-Term-2 Lesson 4. Particle Filters
-Term-2 Lesson 5. Implementation of a Particle Filter
+1. Term-2 Lesson 4. Particle Filters
+
+2. Term-2 Lesson 5. Implementation of a Particle Filter
 
 
 # Overview of the project
