@@ -152,13 +152,7 @@ The C++ program for localization was implemented using following major steps:
 Particle filter implemented was run on Udacity's simulator and its error and performance was noted.
 Below is th output video captured during running output binary and Udacity simulator with showing logs in Udacity project space at path "/home/workspace/KidnappedVehicleProject"
 
-
-
-
-
-![](data/Capture1.PNG)
-
-
+**Video:**
 
 [![Particle filter video](data/Capture.PNG)](https://www.youtube.com/watch?v=q9Fj_fgf2LA "Particle filter Clip for  - Click to Watch!")
 
